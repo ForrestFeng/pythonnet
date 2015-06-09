@@ -1,0 +1,16 @@
+Prepare:
+Download the zip files 
+DebugWin-ForPython2.7-WinX86-Runtime.NET 4.0-TargetFrameworkVersionv4.5.1.7z
+or 
+ReleaseWin-ForPython2.7-WinX86-Runtime.NET 4.0-TargetFrameworkVersionv4.5.1.7z
+
+Install:
+Unzip the files to your python install dir (normally C:\Python27 on windows) diretly.
+
+Verify:
+Click C:\Python27\Python.exe to start python console. And type 
+import clr
+You are set if no error is thrown.
+
+For Linux:
+TBD
