@@ -124,7 +124,7 @@
     <DelaySign>false</DelaySign>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>pythonnet.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\pythonnet.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="RGiesecke.DllExport.Metadata">
@@ -138,11 +138,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\pythonnet.snk">
+      <Link>pythonnet.snk</Link>
+    </None>
     <None Include="..\runtime\clrmodule.il">
       <Link>clrmodule.il</Link>
     </None>
     <None Include="packages.config" />
-    <None Include="pythonnet.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild" DependsOnTargets="RGieseckeDllExport">
